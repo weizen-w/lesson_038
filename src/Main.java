@@ -3,6 +3,8 @@ public class Main {
 //  Переопределите сравнение книг: книги считаются одинаковыми, если совпадают и название, и автор.
 
   public static void main(String[] args) {
-
+    Book warAndPeace = new Book("Лев Толстой", "Война и Мир");
+    Book idiot = new Book("Фёдор Достоевский", "Идиот");
+    Book newIdiot = new Book("Фёдор Достоевский", "Идиот");
   }
 }
