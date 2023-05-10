@@ -17,6 +17,11 @@ public class Book {
   }
 
   @Override
+  public String toString() {
+    return String.format("%s-\"%s\"", autor, name);
+  }
+
+  @Override
   public boolean equals(Object obj) {
     if (this == obj) {
       return true;

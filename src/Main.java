@@ -6,15 +6,13 @@ public class Main {
     Book warAndPeace = new Book("Лев Толстой", "Война и Мир");
     Book idiot = new Book("Фёдор Достоевский", "Идиот");
     Book newIdiot = new Book("Фёдор Достоевский", "Идиот");
-    String firstEquals = String.format("%s-\"%s\" и %s-\"%s\"", warAndPeace.getAutor(),
-        warAndPeace.getName(), idiot.getAutor(), idiot.getName());
+    String firstEquals = String.format("%s и %s", warAndPeace, idiot);
     if (warAndPeace.equals(idiot)) {
       System.out.printf("Книги (" + firstEquals + ") одинаковые");
     } else {
       System.out.println("Книги (" + firstEquals + ") не одинаковые");
     }
-    String secondEquals = String.format("%s-\"%s\" и %s-\"%s\"", newIdiot.getAutor(),
-        newIdiot.getName(), idiot.getAutor(), idiot.getName());
+    String secondEquals = String.format("%s и %s", newIdiot, idiot);
     if (newIdiot.equals(idiot)) {
       System.out.printf("Книги (" + secondEquals + ") одинаковые");
     } else {
